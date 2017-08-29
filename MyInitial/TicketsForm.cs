@@ -42,6 +42,11 @@ namespace Ticketing
             if (radiBackStall.Checked)
                 { mSection = 4; }
 
+            if (chkChild.Checked)
+                mDiscount = true;
+            else
+                mDiscount = false;
+
             mTicketPrice = new TicketPrice(mSection, mQuantity, mDiscount);
 
             mTicketPrice.calculatePrice();
