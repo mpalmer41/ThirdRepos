@@ -37,9 +37,10 @@
             this.radGeneral = new System.Windows.Forms.RadioButton();
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
+            this.radiBackStall = new System.Windows.Forms.RadioButton();
             this.cmdCalculate = new System.Windows.Forms.Button();
             this.chkChild = new System.Windows.Forms.CheckBox();
-            this.radiBackStall = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,16 +132,6 @@
             this.grpSection.TabStop = false;
             this.grpSection.Text = "Section";
             // 
-            // cmdCalculate
-            // 
-            this.cmdCalculate.Location = new System.Drawing.Point(294, 268);
-            this.cmdCalculate.Name = "cmdCalculate";
-            this.cmdCalculate.Size = new System.Drawing.Size(108, 35);
-            this.cmdCalculate.TabIndex = 10;
-            this.cmdCalculate.Text = "Calculate";
-            this.cmdCalculate.UseVisualStyleBackColor = true;
-            this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
-            // 
             // radiBackStall
             // 
             this.radiBackStall.AutoSize = true;
@@ -152,6 +143,16 @@
             this.radiBackStall.Text = "Back Stall";
             this.radiBackStall.UseVisualStyleBackColor = true;
             // 
+            // cmdCalculate
+            // 
+            this.cmdCalculate.Location = new System.Drawing.Point(294, 268);
+            this.cmdCalculate.Name = "cmdCalculate";
+            this.cmdCalculate.Size = new System.Drawing.Size(108, 35);
+            this.cmdCalculate.TabIndex = 10;
+            this.cmdCalculate.Text = "Calculate";
+            this.cmdCalculate.UseVisualStyleBackColor = true;
+            this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
+            // 
             // chkChild
             // 
             this.chkChild.AutoSize = true;
@@ -162,11 +163,21 @@
             this.chkChild.Text = "Child";
             this.chkChild.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(365, 95);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Joe Baloney";
+            // 
             // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 445);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.chkChild);
             this.Controls.Add(this.cmdCalculate);
             this.Controls.Add(this.grpSection);
@@ -199,6 +210,7 @@
         private System.Windows.Forms.Button cmdCalculate;
         private System.Windows.Forms.RadioButton radiBackStall;
         private System.Windows.Forms.CheckBox chkChild;
+        private System.Windows.Forms.Label label1;
     }
 }
 
